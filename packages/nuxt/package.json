@@ -1,0 +1,55 @@
+{
+  "name": "nuxt-swagger",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Auto-generated OpenAPI swagger for Nuxt API.",
+  "keywords": [
+    "nuxt",
+    "openapi",
+    "swagger"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Adrien Martinez",
+    "url": "https://github.com/adrylen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrylen/nuxt-swagger"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "scripts": {
+    "build": "pnpm dev:prepare && pnpm prepack",
+    "clean": "./.scripts/clean.sh",
+    "clean:all": "./.scripts/clean.all.sh",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "postinstall": "pnpm dev:prepare",
+    "prepack": "nuxt-module-build build"
+  },
+  "dependencies": {
+    "@nuxt/kit": "3.8.2",
+    "dox": "1.0.0",
+    "globby": "14.0.0",
+    "js-yaml": "4.1.0",
+    "jsdoc-extractor": "3.2.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "1.0.3",
+    "@nuxt/module-builder": "0.5.4",
+    "@nuxt/schema": "3.8.2",
+    "nuxt": "3.8.2"
+  }
+}

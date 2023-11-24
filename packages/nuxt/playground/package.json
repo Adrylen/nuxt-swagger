@@ -1,0 +1,12 @@
+{
+  "name": "@nuxt-swagger/playground",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate"
+  },
+  "devDependencies": {
+    "nuxt": "latest"
+  },
+  "private": true
+}
