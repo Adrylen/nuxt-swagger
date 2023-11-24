@@ -8,7 +8,7 @@
     "openapi",
     "swagger"
   ],
-  "license":"MIT",
+  "license": "MIT",
   "author": {
     "name": "Adrien Martinez",
     "url": "https://github.com/adrylen"
@@ -28,7 +28,11 @@
     "prepack": "nuxt-module-build build"
   },
   "dependencies": {
-    "@nuxt/kit": "3.8.2"
+    "@nuxt/kit": "3.8.2",
+    "dox": "1.0.0",
+    "globby": "14.0.0",
+    "js-yaml": "4.1.0",
+    "jsdoc-extractor": "3.2.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "1.0.3",
