@@ -1,5 +1,14 @@
 {
   "name": "@nuxt-swagger/monorepo",
   "description": "Mono-repository for Nuxt module 'nuxt-swagger'.",
+  "scripts": {
+    "clean": "pnpm -r --if-present clean",
+    "clean:all": "rm -rf node_modules/ && pnpm -r --if-present clean:all",
+    "postinstall": "pnpm -r --if-present postinstall"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.0",
+    "typescript": "5.3.2"
+  },
   "private": true
 }

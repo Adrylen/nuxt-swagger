@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-swagger",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Auto-generated OpenAPI swagger for Nuxt API.",
+  "keywords": [
+    "nuxt",
+    "openapi",
+    "swagger"
+  ],
+  "license":"MIT",
+  "author": {
+    "name": "Adrien Martinez",
+    "url": "https://github.com/adrylen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrylen/nuxt-swagger"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "@nuxt/kit": "3.8.2"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "1.0.3",
+    "@nuxt/module-builder": "0.5.4",
+    "@nuxt/schema": "3.8.2",
+    "nuxt": "3.8.2"
+  }
+}
