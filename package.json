@@ -1,0 +1,5 @@
+{
+  "name": "@nuxt-swagger/monorepo",
+  "description": "Mono-repository for Nuxt module 'nuxt-swagger'.",
+  "private": true
+}
