@@ -17,6 +17,18 @@
     "type": "git",
     "url": "https://github.com/adrylen/nuxt-swagger"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
   "scripts": {
     "build": "pnpm dev:prepare && pnpm prepack",
     "clean": "./.scripts/clean.sh",
